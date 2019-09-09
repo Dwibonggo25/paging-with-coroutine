@@ -1,7 +1,7 @@
-package com.example.simplelogin.ui
+package com.example.paggingcoroutine.ui
 
 import androidx.lifecycle.ViewModel
-import com.example.simplelogin.repository.LoginRepository
+import com.example.paggingcoroutine.repository.LoginRepository
 import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 
