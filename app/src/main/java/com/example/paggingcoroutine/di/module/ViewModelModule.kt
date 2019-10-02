@@ -1,11 +1,10 @@
-package com.example.simplelogin.di.module
+package com.example.paggingcoroutine.di.module
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.simplelogin.ui.login.LoginViewModel
-import com.example.simplelogin.di.ViewModelFactory
-import com.example.simplelogin.di.ViewModelKey
-import com.example.simplelogin.ui.splashscreen.SplashScreenViewmodel
+import com.example.paggingcoroutine.ui.NewsUpdateViewmodel
+import com.example.paggingcoroutine.di.ViewModelFactory
+import com.example.paggingcoroutine.di.ViewModelKey
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -18,12 +17,8 @@ abstract class ViewModelModule {
 
     @Binds
     @IntoMap
-    @ViewModelKey(LoginViewModel::class)
-    internal abstract fun providesLoginViewModel(viewModel : LoginViewModel) : ViewModel
+    @ViewModelKey(NewsUpdateViewmodel::class)
+    internal abstract fun providesNewsUpdateViewmodel(viewModel : NewsUpdateViewmodel) : ViewModel
 
-    @Binds
-    @IntoMap
-    @ViewModelKey(SplashScreenViewmodel::class)
-    internal abstract fun providesSplashScreenViewmodel(viewModel : SplashScreenViewmodel) : ViewModel
 
 }

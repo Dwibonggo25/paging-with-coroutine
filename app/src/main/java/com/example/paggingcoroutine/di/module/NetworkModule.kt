@@ -1,14 +1,10 @@
-package com.example.simplelogin.di.module
+package com.example.paggingcoroutine.di.module
 
 import android.app.Application
-import com.example.simplelogin.BASE_URL
-import com.example.simplelogin.DEFAULT_CONNECT_TIMEOUT
-import com.example.simplelogin.DEFAULT_READ_TIMEOUT
-import com.example.simplelogin.DEFAULT_WRITE_TIMEOUT
+import com.example.paggingcoroutine.BASE_URL
 import dagger.Module
 import dagger.Provides
 import okhttp3.Cache
-import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

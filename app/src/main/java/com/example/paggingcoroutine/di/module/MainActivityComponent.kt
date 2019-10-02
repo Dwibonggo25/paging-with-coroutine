@@ -1,7 +1,6 @@
-package com.example.simplelogin.di.module
+package com.example.paggingcoroutine.di.module
 
-import com.example.simplelogin.MainActivity
-import dagger.Provides
+import com.example.paggingcoroutine.MainActivity
 import dagger.android.AndroidInjector
 import dagger.Subcomponent
 

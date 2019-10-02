@@ -2,13 +2,11 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
-            android:id="@+id/navigation"
-            app:startDestination="@id/splashScreenFragment">
+            android:id="@+id/navigation">
 
-    <fragment android:id="@+id/loginFragment"
-              android:name="com.example.simplelogin.ui.LoginFragment"
-              android:label="fragment_login"
-              tools:layout="@layout/fragment_login"/>
-    <fragment android:id="@+id/splashScreenFragment" android:name="com.example.simplelogin.ui.splashscreen.SplashScreenFragment"
-              android:label="fragment_splash_screen" tools:layout="@layout/fragment_splash_screen"/>
+    <fragment
+            android:id="@+id/newsUpdateFragment"
+            android:name="com.example.paggingcoroutine.ui.NewsUpdateFragment"
+            android:label="fragment_news_update"
+            tools:layout="@layout/fragment_news_update" />
 </navigation>

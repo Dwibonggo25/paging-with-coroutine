@@ -1,4 +1,4 @@
-package com.example.simplelogin
+package com.example.paggingcoroutine
 
 const val BASE_URL: String = "https://jsonplaceholder.typicode.com"
 const val DEFAULT_CONNECT_TIMEOUT: Long = 30000

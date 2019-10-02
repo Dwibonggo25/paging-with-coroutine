@@ -1,11 +1,11 @@
-package com.example.simplelogin.di.module
+package com.example.paggingcoroutine.di.module
 
 import android.app.Application
 import android.content.Context
 import androidx.room.Room
-import com.example.simplelogin.SimpleApp
-import com.example.simplelogin.AppDatabase
-import com.example.simplelogin.api.ApiService
+import com.example.paggingcoroutine.SimpleApp
+import com.example.paggingcoroutine.AppDatabase
+import com.example.paggingcoroutine.api.ApiService
 import dagger.Module
 import dagger.Provides
 import retrofit2.Retrofit

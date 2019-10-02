@@ -1,7 +1,7 @@
-package com.example.simplelogin.di.module
+package com.example.paggingcoroutine.di.module
 
 import dagger.Provides
-import com.example.simplelogin.MainActivity
+import com.example.paggingcoroutine.MainActivity
 import dagger.Module
 
 

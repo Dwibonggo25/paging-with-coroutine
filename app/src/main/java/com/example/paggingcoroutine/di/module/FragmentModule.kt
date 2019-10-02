@@ -1,7 +1,6 @@
-package com.example.simplelogin.di.module
+package com.example.paggingcoroutine.di.module
 
-import com.example.simplelogin.ui.login.LoginFragment
-import com.example.simplelogin.ui.splashscreen.SplashScreenFragment
+import com.example.paggingcoroutine.ui.NewsUpdateFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -9,8 +8,6 @@ import dagger.android.ContributesAndroidInjector
 abstract class FragmentModule {
 
     @ContributesAndroidInjector
-    abstract fun contributesLoginFragment(): LoginFragment
+    abstract fun contributesNewsUpdateFragment(): NewsUpdateFragment
 
-    @ContributesAndroidInjector
-    abstract fun contributesSplashScreenFragment(): SplashScreenFragment
 }

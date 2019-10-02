@@ -1,6 +1,5 @@
 package com.example.paggingcoroutine.di.module
 
-import com.example.paggingcoroutine.AppDatabase
 import com.example.paggingcoroutine.api.ApiService
 import com.example.paggingcoroutine.db.UserDao
 import com.example.paggingcoroutine.remotedatasource.NewsUpdateRemoteDataSource
@@ -10,14 +9,10 @@ import dagger.Provides
 import javax.inject.Singleton
 
 @Module
-class RepositoryModule {
+class RemoteDataSource {
 
     @Provides
     @Singleton
-    fun providesUserDao (db: AppDatabase) = db.userDao()
-
-    @Provides
-    @Singleton
-    fun providesNewsUpdateRepository (userDao: UserDao, dataSource: NewsUpdateRemoteDataSource): NewsUpdateRepository = NewsUpdateRepository (userDao, dataSource)
+    fun providesNewsUpdateRemoteDataSource (apiService: ApiService) = NewsUpdateRemoteDataSource (apiService)
 
 }

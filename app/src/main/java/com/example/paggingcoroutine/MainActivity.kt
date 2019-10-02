@@ -1,4 +1,4 @@
-package com.example.simplelogin
+package com.example.paggingcoroutine
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -7,8 +7,8 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.ViewModelProviders
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
-import com.example.simplelogin.databinding.ActivityMainBinding
-import com.example.simplelogin.ui.login.LoginViewModel
+import com.example.paggingcoroutine.databinding.ActivityMainBinding
+import com.example.paggingcoroutine.ui.NewsUpdateViewmodel
 import dagger.android.AndroidInjection
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.HasSupportFragmentInjector
@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity(), HasSupportFragmentInjector {
     @Inject
     lateinit var viewModelFactory: ViewModelProvider.Factory
 
-    private lateinit var viewModel : LoginViewModel
+    private lateinit var viewModel : NewsUpdateViewmodel
     private val compositeDisposable = CompositeDisposable()
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), HasSupportFragmentInjector {
     override fun onSupportNavigateUp(): Boolean = Navigation.findNavController(this, R.id.container).navigateUp()
 
     private fun initBinding() {
-        viewModel = ViewModelProviders.of( this, viewModelFactory).get(LoginViewModel::class.java)
+        viewModel = ViewModelProviders.of( this, viewModelFactory).get(NewsUpdateViewmodel::class.java)
         binding = DataBindingUtil.setContentView ( this, R.layout.activity_main)
         binding.executePendingBindings()
     }

@@ -1,11 +1,11 @@
-package com.example.simplelogin
+package com.example.paggingcoroutine
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.simplelogin.db.User
-import com.example.simplelogin.db.UserDao
+import com.example.paggingcoroutine.db.Source
+import com.example.paggingcoroutine.db.UserDao
 
-@Database(entities = [User::class], version = 1, exportSchema = false)
+@Database(entities = [Source::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
 
     abstract fun userDao(): UserDao
